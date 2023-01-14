@@ -1,0 +1,10 @@
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.wrapper__header {
+  background: white;
+  padding: 20px;
+  margin-bottom: 0;
+}

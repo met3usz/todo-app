@@ -1,0 +1,29 @@
+.item {
+  padding: 5px;
+  margin: 5px 0;
+  border-bottom: 1px solid #ccc;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.item__button {
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 0;
+  border: none;
+  outline: none;
+}
+
+.item__button-done {
+  background-color: rgb(23 112 28);
+}
+
+.item__button-remove {
+  background-color: rgb(233 28 58);
+}
+
+.item__content {
+  margin: 0 20px;
+}
