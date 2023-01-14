@@ -4,6 +4,11 @@
     { content: 'zjeść kolację', done: true },
   ];
 
+  const clear = () => {
+    const newTask = document.querySelector('.js-newTask');
+    newTask.value = '';
+  };
+
   const addNewTask = (newTaskContent) => {
     tasks.push({ content: newTaskContent });
 
@@ -46,10 +51,15 @@
     for (task of tasks) {
       htmlString += `
       <li
-      ${task.done ? 'style = "text-decoration: line-through"' : ''}>
-      <button class="js-done">zrobione?</button>
-      <button class="js-remove">usuń</button>
-        ${task.content}
+      class="item"
+      >
+      <button class="item__button item__button-done js-done">${
+        task.done ? '✅' : ''
+      }</button>
+      <p class="item__content" ${
+        task.done ? 'style = "text-decoration: line-through"' : ''
+      }>${task.content}</p>
+      <button class="item__button item__button-remove js-remove">🗑️</button>
       </li>
       `;
     }
@@ -67,6 +77,7 @@
       return;
     }
     addNewTask(newTaskContent);
+    clear();
   };
 
   const init = () => {
