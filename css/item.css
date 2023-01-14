@@ -20,8 +20,16 @@
   background-color: rgb(23 112 28);
 }
 
+.item__button-done:hover {
+  background-color: rgb(23, 160, 27);
+}
+
 .item__button-remove {
-  background-color: rgb(233 28 58);
+  background-color: rgb(233, 28, 58);
+}
+
+.item__button-remove:hover {
+  background-color: rgb(233, 80, 58);
 }
 
 .item__content {
