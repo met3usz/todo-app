@@ -9,3 +9,12 @@ And it also works on mobile:
 ![How the app works - mobile](https://i.imgur.com/FH70AKq.gif)
 
 [link]: https://met3usz.github.io/todo-app/
+
+## Tools used in the project
+- HTML
+- JavaScript
+- CSS
+- Grid
+- Flex
+- BEM
+- ES6 & Features
