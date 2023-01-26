@@ -83,12 +83,12 @@
     let buttons = '';
     if (htmlString != '') {
       buttons += `
-      <button class="main__button js-allTasksDone" ${
-        tasks.every(({ done }) => done) ? 'disabled = "true"' : ''
-      }>Ukończ wszystkie</button>
       <button class="main__button js-hideDoneTasks">${
         hideDoneTask ? 'Pokaż' : 'Ukryj'
       }  wykonane</button>
+      <button class="main__button js-allTasksDone" ${
+        tasks.every(({ done }) => done) ? 'disabled' : ''
+      }>Ukończ wszystkie</button>
       `;
     }
 
