@@ -7,6 +7,10 @@
   align-items: center;
 }
 
+.item--hiden {
+  display: none;
+}
+
 .item__button {
   color: white;
   width: 35px;
