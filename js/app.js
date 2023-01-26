@@ -83,16 +83,16 @@
     let buttons = '';
     if (htmlString != '') {
       buttons += `
-      <button class="js-allTasksDone" ${
+      <button class="main__button js-allTasksDone" ${
         tasks.every(({ done }) => done) ? 'disabled = "true"' : ''
       }>Ukończ wszystkie</button>
-      <button class="js-hideDoneTasks">${
+      <button class="main__button js-hideDoneTasks">${
         hideDoneTask ? 'Pokaż' : 'Ukryj'
       }  wykonane</button>
       `;
     }
 
-    document.querySelector('.js-mainHeader').innerHTML = buttons;
+    document.querySelector('.js-mainButtons').innerHTML = buttons;
   };
 
   const bindEvents = () => {
