@@ -51,4 +51,5 @@
 
 .main__button:disabled {
   color: rgb(100, 100, 100);
+  cursor: default;
 }
