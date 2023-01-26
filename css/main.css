@@ -42,9 +42,13 @@
   border: none;
   color: hsl(187, 100%, 23%);
   cursor: pointer;
+  transition: 0.5s ease;
 }
 
 .main__button:hover {
   color: hsl(187, 100%, 35%);
-  transition: 0.5s ease;
+}
+
+.main__button:disabled {
+  color: rgb(100, 100, 100);
 }

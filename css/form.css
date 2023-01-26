@@ -29,10 +29,11 @@
   color: white;
   background-color: hsl(187, 100%, 23%);
   overflow: auto;
+  cursor: pointer;
+  transition: 0.5s ease;
 }
 
 .form__button:hover {
   background-color: hsl(187, 100%, 35%);
-  transition: 0.5s ease;
-  transform: scaleX(1.1);
+  transform: scaleX(1.02);
 }
