@@ -2,7 +2,7 @@
 
 Hey! Today I'm going to introduce you to the ToDo application. Click [here][link] to see the demo app. It is a very simple application for making a task list. Below you can see how it works:
 
-![How the app works - wide screen](https://i.imgur.com/mVvv6ZA.gif)
+![How the app works - wide screen](https://i.imgur.com/IPuRbvU.gif)
 
 And it also works on mobile:
 
