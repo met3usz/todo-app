@@ -64,24 +64,9 @@
     let htmlString = '';
     for (task of tasks) {
       htmlString += `
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <li class="item">
+      <li class="item ${task.done && hideDoneTask ? 'item--hiden' : ''}">
       <button class="item__button item__button-done js-done">${
-        task.done ? '✅' : ''
-=======
-=======
->>>>>>> parent of ae6f29e... better format for reading
-      <li
-      class="item"
-      >
-      <button class="item__button item__button-done js-done">${
-<<<<<<< HEAD
         task.done ? '✔️' : ''
->>>>>>> master
-=======
-        task.done ? '✅' : ''
->>>>>>> parent of ae6f29e... better format for reading
       }</button>
       <p class="item__content" ${
         task.done ? 'style = "text-decoration: line-through"' : ''
@@ -98,16 +83,16 @@
     let buttons = '';
     if (htmlString != '') {
       buttons += `
-      <button class="main__button js-allTasksDone" ${
-        tasks.every(({ done }) => done) ? 'disabled' : ''
+      <button class="js-allTasksDone" ${
+        tasks.every(({ done }) => done) ? 'disabled = "true"' : ''
       }>Ukończ wszystkie</button>
-      <button class="main__button js-hideDoneTasks">${
+      <button class="js-hideDoneTasks">${
         hideDoneTask ? 'Pokaż' : 'Ukryj'
       }  wykonane</button>
       `;
     }
 
-    document.querySelector('.js-mainButtons').innerHTML = buttons;
+    document.querySelector('.js-mainHeader').innerHTML = buttons;
   };
 
   const bindEvents = () => {
@@ -117,14 +102,12 @@
 
   const bindListHeaderEvents = () => {
     const allTaskDoneButton = document.querySelector('.js-allTasksDone');
-    console.log(allTaskDoneButton);
     if (allTaskDoneButton) {
       allTaskDoneButton.addEventListener('click', () => {
         markAllTaskDone();
       });
     }
     const hideDoneTasksButton = document.querySelector('.js-hideDoneTasks');
-    console.log(hideDoneTasksButton);
     if (hideDoneTasksButton) {
       hideDoneTasksButton.addEventListener('click', () => {
         hideDoneTasks();
@@ -140,7 +123,6 @@
 
   const onFormSubmit = (event) => {
     event.preventDefault();
-
     const newTaskContent = document.querySelector('.js-newTask').value.trim();
     if (newTaskContent === '') {
       return;
