@@ -1,4 +1,7 @@
 .list {
   padding: 20px;
   list-style-type: none;
+  grid-column-start: span 2;
+  border-top: 1px solid #ccc;
+  margin-top: 0;
 }

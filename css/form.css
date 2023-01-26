@@ -27,10 +27,12 @@
   border: 0;
   outline: none;
   color: white;
-  background-color: rgb(0, 105, 118);
+  background-color: hsl(187, 100%, 23%);
   overflow: auto;
 }
 
 .form__button:hover {
-  background-color: rgb(0, 137, 155);
+  background-color: hsl(187, 100%, 35%);
+  transition: 0.5s ease;
+  transform: scaleX(1.1);
 }
