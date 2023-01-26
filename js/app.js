@@ -65,16 +65,23 @@
     for (task of tasks) {
       htmlString += `
 <<<<<<< HEAD
+<<<<<<< HEAD
       <li class="item">
       <button class="item__button item__button-done js-done">${
         task.done ? '✅' : ''
 =======
+=======
+>>>>>>> parent of ae6f29e... better format for reading
       <li
       class="item"
       >
       <button class="item__button item__button-done js-done">${
+<<<<<<< HEAD
         task.done ? '✔️' : ''
 >>>>>>> master
+=======
+        task.done ? '✅' : ''
+>>>>>>> parent of ae6f29e... better format for reading
       }</button>
       <p class="item__content" ${
         task.done ? 'style = "text-decoration: line-through"' : ''
