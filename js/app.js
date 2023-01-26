@@ -51,8 +51,12 @@
     for (task of tasks) {
       htmlString += `
       <li class="item">
-      <button class="item__button item__button-done js-done">${task.done ? '✅' : ''}</button>
-      <p class="item__content" ${task.done ? 'style = "text-decoration: line-through"' : ''}>${task.content}</p>
+      <button class="item__button item__button-done js-done">${
+        task.done ? '✅' : ''
+      }</button>
+      <p class="item__content" ${
+        task.done ? 'style = "text-decoration: line-through"' : ''
+      }>${task.content}</p>
       <button class="item__button item__button-remove js-remove">🗑️</button>
       </li>
       `;

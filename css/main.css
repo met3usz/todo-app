@@ -1,4 +1,4 @@
-.section {
+.main {
   max-width: 1000px;
   margin: 0 auto;
   background-color: white;
@@ -6,7 +6,7 @@
   margin-top: 15px;
 }
 
-.section__header {
+.main__header--h2 {
   padding: 20px;
   margin-top: 0;
   border-bottom: 1px solid #ccc;
